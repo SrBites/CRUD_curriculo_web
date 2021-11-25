@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+   <meta charset="UTF-8">
+   <link href="static/crud.css" rel="stylesheet" type="text/css">
+   <title>Pesquisando currículos</title>
+</head>
+<body>
+   <h1>Opções para pesquisa de currículos:</h1>
+   <hr/>
+   <form action="/consultar" method="post">
+       <table>
+           <tr>
+               <td>nome:</td>
+               <td>{{ nome | safe }}</td>
+           </tr>
+       </table>
+       <br/>
+       <input type="submit" value="Consultar Currículos"/>
+   </form>
+   <br/>
+   <hr/>
+   <br/>
+   <a href="/"> Voltar ao Menu </a>
+</body>
+</html>

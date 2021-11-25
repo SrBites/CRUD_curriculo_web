@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+   <meta charset="UTF-8">
+   <link href="static/crud.css" rel="stylesheet" type="text/css">
+   <title>Busca por Currículo</title>
+</head>
+<body>
+   <h1>Busca por nome para alteração de currículo</h1>
+   <hr/>
+   <form action="/formalterar" method="post">
+       <table>
+           <tr>
+               <td>nome descrito no currículo:</td>
+               <td><input type="text" name="nome" size="50" maxlength="40" required/></td>
+           </tr>
+       </table>
+       <br/>
+       <input type="submit" value="Alterar currículo"/>
+   </form>
+   <hr/>
+   <br/>
+   <a href="/"> Voltar ao Menu </a>
+</body>
+</html>

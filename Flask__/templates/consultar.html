@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/crud.css" rel="stylesheet" type="text/css">
+   <title>Resultado da Consulta de Currículos</title>
+</head>
+<body>
+   <h1>Resultado da consulta de Currículos:</h1>
+   <hr/>
+   <table>
+       <tr>
+           <th>nome</th>
+           <th>data</th>
+           <th>telefone</th>
+           <th>descricao</th>
+           <th>locadouro</th>
+           <th>salario</th>
+       </tr>
+       {{ nomes | safe }}
+   </table>
+   <br/>
+   <hr/>
+   <br/>
+   <a href="/"> Voltar ao Menu </a> ||
+   <a href="/parconsultar"> Consultar Cursos </a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/crud.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <h1>Formulário de inclusão de curriculo</h1>
+   <hr/>
+   <form action="/incluir" method="post">
+       <table>
+           <tr>
+               <td>Nome:</td>
+               <td><input type="text" name="nome" size="30" maxlength="50" required/></td>
+           </tr>
+           <tr>
+               <td>Data de nacimento:</td>
+               <td><input type="date" name="data"/></td>
+           </tr>
+           <tr>
+               <td>Contato de telefone(11 digitos):</td>
+               <td><input type="text" name="telefone" size="11" required/></td>
+           </tr>
+           <tr>
+               <td>Fale um pouco mais sobre você(descrição):</td>
+               <td><textarea rows="6" cols="20" name="descricao"></textarea>
+           </tr>
+           <tr>
+               <td>Locadouro:</td>
+               <td><textarea rows="3" cols="20" name="locadouro"></textarea>
+           </tr>
+           <tr>
+               <td>pretenção salárial:</td>
+               <td><input type="number" name="salario" size="9999" required/></td>
+           </tr>
+       </table>
+       <br/>
+       <input type="submit" value="incluir Curriculo."/>
+   </form>
+   <hr/>
+   <br/>
+   [<a href="/"> Voltar ao Menu </a>]
+</body>
+</html>

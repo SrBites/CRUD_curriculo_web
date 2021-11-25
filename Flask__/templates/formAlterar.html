@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/crud.css" rel="stylesheet" type="text/css">
+   <title>Formulário para alteração de Currículo</title>
+</head>
+<body>
+   <h1>Formulário de alteração de currículo</h1>
+   <hr/>
+   <form action="/alterar" method="post">
+       <table>
+           <tr>
+               <td>Nome:</td>
+               <td><input type="text" name="nome" size="45" maxlength="40" required value="{{ nome }}"/></td>
+           </tr>
+           <tr>
+               <td>Data:</td>
+               <td><input type="date" name="data" value="{{ DATA }}"/></td>
+           </tr>
+           <tr>
+               <td>Telefone:</td>
+               <td><input type="text" name="telefone" size="15" maxlength="12" required  value="{{ telefone }}"/></td>
+           </tr>
+           <tr>
+               <td>Descrição:</td>
+               <td><textarea rows="5" cols="50" name="descricao">{{ descricao }}</textarea></td>
+           </tr>
+           <tr>
+               <td>locadouro:</td>
+               <td><textarea rows="5" cols="50" name="locadouro">{{ locadouro }}</textarea></td>
+           </tr>
+           <tr>
+               <td>salario:</td>
+               <td><input type="number" name="salario" size="15" min="1" max="99999.99" step="1.0" required  value="{{ salario }}"/></td>
+           </tr>
+       </table>
+       <br/>
+       <input type="hidden" name="idt" value="{{ idt }}"/>
+       <input type="submit" value="Alterar currículo"/>
+   </form>
+   <hr/>
+   <br/>
+   <a href="/"> Voltar ao Menu </a>
+   <a href="/parAlterar"> Alterar outros currículos </a>
+</body>
+</html>

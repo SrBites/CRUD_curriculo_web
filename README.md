@@ -5,7 +5,7 @@ Diogo Bites Faria de Paula RA:22007351
 
 # interpretador: python3.7
 
-pacote:                versão:\
+(pacote/versão:)
 
 Flask	                  1.1.2\
 Jinja2	                2.11.3\

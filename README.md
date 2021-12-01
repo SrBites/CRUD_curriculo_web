@@ -1,6 +1,6 @@
 # READ ME
-Trabalho de programação web quarta menção.
-opção(currículo)
+Trabalho de programação web quarta menção.\
+opção(currículo)\
 Diogo Bites Faria de Paula RA:22007351
 
 # interpretador: python3.7

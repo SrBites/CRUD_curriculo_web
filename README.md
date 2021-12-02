@@ -35,7 +35,7 @@ Flask_/criarcurriculo_sgbd.py cria uma tabel no SQL necessaria ao funcionamento.
 static/bootstrap são pastas extras para modificações futuras assim como possiveis comentarios no main.\
 
 NECESSITA DE UM SCHEMA SQL COM OS PARAMENTROS= login:"root",senha:"",schema:"test"\
-pode-se utilizar o seguinte codigo para o SQL " CREATE DATABASE IF NOT EXISTS `testando;` "
+pode-se utilizar o seguinte codigo para o SQL " CREATE DATABASE IF NOT EXISTS `test;` "
 
 as tabelas são criadas automaticamente ao executar o codigo criar_curriculo_sgbd.py
 

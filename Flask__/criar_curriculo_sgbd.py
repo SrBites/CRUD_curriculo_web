@@ -1,7 +1,7 @@
 from base import sql
 
 # criar_curso.py
-
+# NECESSITA TER UMA TABLE SQL COM ESSES PARAMETROS:
 mysql = sql.SQL("root", '', "test")
 
 comando = "DROP TABLE IF EXISTS tb_curriculo;"

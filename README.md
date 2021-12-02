@@ -33,5 +33,7 @@ recomendado: utilização do pycharm e seus pacotes\
 Flask_/crud_curso.py é o MAIN\
 Flask_/criarcurriculo_sgbd.py cria uma tabel no SQL necessaria ao funcionamento.\
 static/bootstrap são pastas extras para modificações futuras assim como possiveis comentarios no main.\
+NECESSITA DE UM SCHEMA SQL COM OS PARAMENTROS DO ARQUIVO: "criar_currículo_SQBD"\
+
 
 

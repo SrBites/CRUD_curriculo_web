@@ -5,7 +5,10 @@ from base import sql
 #-----------------------------------------|
 # LOGIN: "root", SENHA:"", schemas:"test" |
 #-----------------------------------------|
+
 mysql = sql.SQL("root", '', "test")
+
+
 
 comando = "DROP TABLE IF EXISTS tb_curriculo;"
 

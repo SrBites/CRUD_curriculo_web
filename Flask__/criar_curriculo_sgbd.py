@@ -1,15 +1,20 @@
 from base import sql
 
+# criar_curso.py
+banco = sql.banco()
 
-# NECESSITA TER UMA TABLE SQL COM ESSES PARAMETROS:
-#-----------------------------------------|
-# LOGIN: "root", SENHA:"", schemas:"test" |
-#-----------------------------------------|
+comando001 = 'DROP DATABASE IF EXISTS test;'
+if banco.executar(comando001, []):
+    print('BANCO: Excluído')
 
-mysql = sql.SQL("root", '', "test")
+comando002 = 'CREATE DATABASE test;'
+if banco.executar(comando002, []):
+    print('BANCO: Criado')
+else:
+    print('BANCO: Erro na criação')
 
 
-
+mysql = sql.SQL("test")
 comando = "DROP TABLE IF EXISTS tb_curriculo;"
 
 if mysql.executar(comando, ()):

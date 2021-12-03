@@ -1,5 +1,6 @@
 import mysql.connector
-# utilizando
+# utilizando as seguintes configurações
+# MODIFIQUE PARAMETROS LOCAIS AQUI(nas strings seguintes):
 user = 'root'
 password = ''
 host = '127.0.0.1'

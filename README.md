@@ -35,5 +35,6 @@ observações:
 -Caso seja necessario mudança de parametros relacionados a maquina local ou servidor como "login","password","host", eles podem ser modificados em "Flask_/base/sql.py" em suas primeiras 3 linhas úteis.\
 -static/bootstrap são pastas extras para modificações futuras, assim como certos pacotes importados\
 -as tabelas e schemas necessarios são criadas automaticamente ao executar o codigo "criar_curriculo_sgbd.py"
+-Atente-se aos comentarios !
 
 

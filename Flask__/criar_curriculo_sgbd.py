@@ -1,6 +1,6 @@
 from base import sql
-# teste de curso
-# criar_curso.py
+
+# criar_curriculo.py
 banco = sql.banco()
 
 comando001 = 'DROP DATABASE IF EXISTS test;'

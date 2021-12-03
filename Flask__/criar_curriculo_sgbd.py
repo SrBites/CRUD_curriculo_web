@@ -1,5 +1,5 @@
 from base import sql
-
+# teste de curso
 # criar_curso.py
 banco = sql.banco()
 

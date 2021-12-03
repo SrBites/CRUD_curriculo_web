@@ -26,7 +26,7 @@ def incluir():
     locadouro = request.form['locadouro']
     salario = request.form['salario']
 
-    mysql = sql.SQL("root", "", "test")
+    mysql = sql.SQL("test")
     comando = "INSERT INTO tb_curriculo(nome, data, telefone, descricao, locadouro, salario) VALUES (%s, %s, %s, %s, %s, %s);"
 
     if mysql.executar(comando, [nome, data, telefone, descricao, locadouro, salario]):
@@ -40,7 +40,7 @@ def incluir():
 @app.route('/parconsultar')
 def parConsultar():
    # Recuperando modelos existentes na base de dados
-   mysql = sql.SQL("root", "", "test")
+   mysql = sql.SQL("test")
    comando = "SELECT DISTINCT nome FROM tb_curriculo ORDER BY nome;"
 
    cs = mysql.consultar(comando, ())
@@ -63,7 +63,7 @@ def consultar():
     nome = "" if nome == "Todos" else nome
 
     # Recuperando dados que satisfazem aos parâmetros de filtragem
-    mysql = sql.SQL("root", "", "test")
+    mysql = sql.SQL("test")
     comando = "SELECT * FROM tb_curriculo WHERE nome LIKE CONCAT('%', %s, '%')"
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF8')
 
@@ -93,7 +93,7 @@ def formAlterar_curso():
 
     nome = request.form['nome']
 
-    mysql = sql.SQL("root", "", "test")
+    mysql = sql.SQL("test")
     comando = "SELECT * FROM tb_curriculo WHERE nome=%s;"
 
     cs = mysql.consultar(comando, [nome])
@@ -120,7 +120,7 @@ def alterar():
     print(idt, nome, data, telefone, descricao, locadouro, salario)
     print('2 stop')
 
-    mysql = sql.SQL("root", "", "test")
+    mysql = sql.SQL("test")
     comando = "UPDATE tb_curriculo SET nome=%s, data=%s, telefone=%s, descricao=%s, locadouro=%s, salario=%s WHERE idt=%s;"
 
     if mysql.executar(comando, [nome, data, telefone, descricao, locadouro, salario, idt]):
@@ -134,7 +134,7 @@ def alterar():
 @app.route('/parexcluir')
 def parExcluir_curso():
     # Recuperando todos os modelos da base de dados
-    mysql = sql.SQL("root", "", "test")
+    mysql = sql.SQL( "test")
     comando = "SELECT idt, nome, telefone, data FROM tb_curriculo ORDER BY nome;"
 
     cs = mysql.consultar(comando, ())
@@ -157,7 +157,7 @@ def excluir_curso():
     idt = int(request.form['idt'])
 
     # Excluindo dados no SGBD
-    mysql = sql.SQL("root", "", "test")
+    mysql = sql.SQL("test")
     comando = "DELETE FROM tb_curriculo WHERE idt=%s;"
 
     if mysql.executar(comando, [idt]):
